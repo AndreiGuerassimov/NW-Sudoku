@@ -1,0 +1,263 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Sudoku</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js" type="text/javascript"></script>
+    <script src="js/sudoku.js" type="text/javascript"></script>
+</head>
+<body>
+
+    <!-- MAIN CONTAINER -->
+    <div class="main-container">
+	
+		<!-- INTRO -->
+		<div class="title-container">
+			<div class="title">SUDOKU</div>
+		</div>
+	
+        <!-- PUZZLE -->
+        <table class="puzzle" cellpadding="0" cellspacing="0">
+			<tbody>
+				
+				 <!-- PUZZLE ROW 1 -->
+				<tr>
+				
+					<!-- CELL 1 -->
+					<td class="cell">
+						<table class="cell-table" cellpadding="0" cellspacing="0">
+							<tbody>
+								<tr>
+									<td id="sqr1a"></td>
+									<td id="sqr1b"></td>
+									<td id="sqr1c"></td>
+								</tr>
+								<tr>
+									<td id="sqr1d"></td>
+									<td id="sqr1e"></td>
+									<td id="sqr1f"></td>
+								</tr>
+								<tr>
+									<td id="sqr1g"></td>
+									<td id="sqr1h"></td>
+									<td id="sqr1i"></td>
+								</tr>
+							</tbody>
+						</table>
+					</td>
+					
+					<!-- CELL 2 -->
+					<td class="cell">
+						<table class="cell-table" cellpadding="0" cellspacing="0">
+							<tbody>
+								<tr>
+									<td id="sqr2a"></td>
+									<td id="sqr2b"></td>
+									<td id="sqr2c"></td>
+								</tr>
+								<tr>
+									<td id="sqr2d"></td>
+									<td id="sqr2e"></td>
+									<td id="sqr2f"></td>
+								</tr>
+								<tr>
+									<td id="sqr2g"></td>
+									<td id="sqr2h"></td>
+									<td id="sqr2i"></td>
+								</tr>
+							</tbody>
+						</table>
+					</td>
+					
+					<!-- CELL 3 -->
+					<td class="cell">
+						<table class="cell-table" cellpadding="0" cellspacing="0">
+							<tbody>
+								<tr>
+									<td id="sqr3a"></td>
+									<td id="sqr3b"></td>
+									<td id="sqr3c"></td>
+								</tr>
+								<tr>
+									<td id="sqr3d"></td>
+									<td id="sqr3e"></td>
+									<td id="sqr3f"></td>
+								</tr>
+								<tr>
+									<td id="sqr3g"></td>
+									<td id="sqr3h"></td>
+									<td id="sqr3i"></td>
+								</tr>
+							</tbody>
+						</table>
+					</td>
+				</tr>
+				
+				 <!-- PUZZLE ROW 2 -->
+				<tr>
+				
+					<!-- CELL 4 -->
+					<td class="cell">
+						<table class="cell-table" cellpadding="0" cellspacing="0">
+							<tbody>
+								<tr>
+									<td id="sqr4a"></td>
+									<td id="sqr4b"></td>
+									<td id="sqr4c"></td>
+								</tr>
+								<tr>
+									<td id="sqr4d"></td>
+									<td id="sqr4e"></td>
+									<td id="sqr4f"></td>
+								</tr>
+								<tr>
+									<td id="sqr4g"></td>
+									<td id="sqr4h"></td>
+									<td id="sqr4i"></td>
+								</tr>
+							</tbody>
+						</table>
+					</td>
+					
+					<!-- CELL 5 -->
+					<td class="cell">
+						<table class="cell-table" cellpadding="0" cellspacing="0">
+							<tbody>
+								<tr>
+									<td id="sqr5a"></td>
+									<td id="sqr5b"></td>
+									<td id="sqr5c"></td>
+								</tr>
+								<tr>
+									<td id="sqr5d"></td>
+									<td id="sqr5e"></td>
+									<td id="sqr5f"></td>
+								</tr>
+								<tr>
+									<td id="sqr5g"></td>
+									<td id="sqr5h"></td>
+									<td id="sqr5i"></td>
+								</tr>
+							</tbody>
+						</table>
+					</td>
+					
+					<!-- CELL 6 -->
+					<td class="cell">
+						<table class="cell-table" cellpadding="0" cellspacing="0">
+							<tbody>
+								<tr>
+									<td id="sqr6a"></td>
+									<td id="sqr6b"></td>
+									<td id="sqr6c"></td>
+								</tr>
+								<tr>
+									<td id="sqr6d"></td>
+									<td id="sqr6e"></td>
+									<td id="sqr6f"></td>
+								</tr>
+								<tr>
+									<td id="sqr6g"></td>
+									<td id="sqr6h"></td>
+									<td id="sqr6i"></td>
+								</tr>
+							</tbody>
+						</table>
+					</td>
+				</tr>
+				
+				 <!-- PUZZLE ROW 3 -->
+				<tr>
+				
+					<!-- CELL 7 -->
+					<td class="cell">
+						<table class="cell-table" cellpadding="0" cellspacing="0">
+							<tbody>
+								<tr>
+									<td id="sqr7a"></td>
+									<td id="sqr7b"></td>
+									<td id="sqr7c"></td>
+								</tr>
+								<tr>
+									<td id="sqr7d"></td>
+									<td id="sqr7e"></td>
+									<td id="sqr7f"></td>
+								</tr>
+								<tr>
+									<td id="sqr7g"></td>
+									<td id="sqr7h"></td>
+									<td id="sqr7i"></td>
+								</tr>
+							</tbody>
+						</table>
+					</td>
+					
+					<!-- CELL 8 -->
+					<td class="cell">
+						<table class="cell-table" cellpadding="0" cellspacing="0">
+							<tbody>
+								<tr>
+									<td id="sqr8a"></td>
+									<td id="sqr8b"></td>
+									<td id="sqr8c"></td>
+								</tr>
+								<tr>
+									<td id="sqr8d"></td>
+									<td id="sqr8e"></td>
+									<td id="sqr8f"></td>
+								</tr>
+								<tr>
+									<td id="sqr8g"></td>
+									<td id="sqr8h"></td>
+									<td id="sqr8i"></td>
+								</tr>
+							</tbody>
+						</table>
+					</td>
+					
+					<!-- CELL 9 -->
+					<td class="cell">
+						<table class="cell-table" cellpadding="0" cellspacing="0">
+							<tbody>
+								<tr>
+									<td id="sqr9a"></td>
+									<td id="sqr9b"></td>
+									<td id="sqr9c"></td>
+								</tr>
+								<tr>
+									<td id="sqr9d"></td>
+									<td id="sqr9e"></td>
+									<td id="sqr9f"></td>
+								</tr>
+								<tr>
+									<td id="sqr9g"></td>
+									<td id="sqr9h"></td>
+									<td id="sqr9i"></td>
+								</tr>
+							</tbody>
+						</table>
+					</td>
+				</tr>
+			</tbody>
+        </table>
+		
+		<!-- CONTROLS -->
+		<div class="controls-container">
+			<div id="ctrl-reset" onclick="reset()">Reset</div>
+			<div id="ctrl-hint" class="ctrl-disabled" onclick="hint(false)">Hint</div>
+		</div>
+		
+		<!-- MESSAGES -->
+		<div class="message-container">
+			<div id="msg-isNaN" class="message">Please enter numbers only.</div>
+			<div id="msg-noErrors" class="message">So far so good!</div>
+			<div id="msg-hasErrors" class="message">You have some mistakes.</div>
+			<div id="msg-puzzleSolved" class="message">Congradulations! You solved the puzzle!</div>
+		</div>
+    </div>
+
+</body>
+</html>
